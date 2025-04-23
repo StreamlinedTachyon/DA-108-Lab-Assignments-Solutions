@@ -1,0 +1,35 @@
+import datetime  # importing the datetime module
+
+# Step 1: Take user's birth date input
+birth_year = int(input("Enter your birth year (YYYY): "))
+birth_month = int(input("Enter your birth month (1-12): "))
+birth_day = int(input("Enter your birth day (1-31): "))
+
+# Step 2: Get today's date
+today = datetime.date.today()
+
+# Step 3: Create a date object for the birthday in the current year
+this_year_birthday = datetime.date(today.year, birth_month, birth_day)
+
+# Step 4: Calculate age
+age = today.year - birth_year
+if today < this_year_birthday:
+    age -= 1  # if birthday hasn't happened yet this year
+
+# Step 5: Find next birthday
+if today > this_year_birthday:
+    next_birthday = datetime.date(today.year + 1, birth_month, birth_day)
+else:
+    next_birthday = this_year_birthday
+
+# Step 6: Calculate days left until next birthday
+days_until_birthday = (next_birthday - today).days
+
+# Step 7: Display results
+print("\n✨🎉 **Your Age Details** 🎉✨")
+print("🗓️ **Today's Date:**", today.strftime("%A, %B %d, %Y"))
+print(f"🎂 **Your Age:** **{age} years old**")
+print(f"⏳ **Days Left Until Your Next Birthday:** **{days_until_birthday} days**")
+print(f"📅 **Your Next Birthday Is On:** **{next_birthday.strftime('%A, %B %d, %Y')}**")
+print("\n🎈🎁 **Make your next birthday special!** 🎁🎈")
+
