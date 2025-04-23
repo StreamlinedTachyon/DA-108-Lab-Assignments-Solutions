@@ -9,7 +9,7 @@ This repository contains well-structured, clean, and optimized solutions for all
 
 ## 📁 What’s Inside?
 
-- ✅ **12 Weeks** of hands-on Python lab problems  
+- ✅ Solution of **12 Weeks** of hands-on Python lab problems  
 - 🧪 Covers topics from basics to advanced problem-solving  
 - 🔍 Readable, tested, and easy to understand  
 - 💡 Great reference for revisions, assignments, and practice  
