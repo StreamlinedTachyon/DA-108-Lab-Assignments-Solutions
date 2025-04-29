@@ -1,4 +1,4 @@
-mport string
+import string
 
 def check_password_strength(password):
     # Initialize boolean variables
